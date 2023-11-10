@@ -1,4 +1,7 @@
 FROM node:14-alpine AS build
+
+LABEL MAINTAINER=tongochung1809@gmail.com
+
 WORKDIR /usr/src/app
 COPY . .
 RUN npm install
